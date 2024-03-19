@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header, .footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+.notebook-frame {
+    position: relative;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#status {
+    color: #000;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffeb3b;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Indie Flower', cursive;
+    text-align: left;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+#status::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background-color: #fffff;
+    border-radius: 8px;
+    transform: rotate(-2deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Added rule to capitalize the title */
+header h1 {
+    text-transform: uppercase;
+}
